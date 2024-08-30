@@ -6,7 +6,7 @@ import { FaLocationArrow } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36 h-screen">
+    <div className="pb-20 pt-20 md:pt-36 h-screen">
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -24,18 +24,18 @@ const Hero = () => {
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
       </div>
 
-      <div className="flex justify-center relative my-20 z-10">
+      <div className="flex justify-center relative my-16 md:my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex gap-y-10 md:gap-y-2 justify-center flex-col items-center">
           <h1 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
             Rental Playstation Kak Gem
           </h1>
 
           <TextGenerateEffect
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
+            className="text-center text-[28px] md:text-5xl lg:text-6xl"
             words="Sewa PlayStation, Rasakan Sensasi Gaming Terbaik"
           />
 
-          <p className="text-center md:tracking-wider mb-48 sm:mb-4 text-sm md:text-lg lg:text-2xl">
+          <p className="text-center md:tracking-wider mb-28 sm:mb-4 text-sm md:text-lg lg:text-2xl">
             Nikmati Serunya Bermain PS dengan Pilihan Game Lengkap
           </p>
 
@@ -43,6 +43,7 @@ const Hero = () => {
             <MagicButton
               title="Pesan Sekarang"
               icon={<FaLocationArrow />}
+              radius="lg"
               position="right"
             />
           </a>
